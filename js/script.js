@@ -23,3 +23,21 @@ priceN.addEventListener('input', () => {
   const brutto = Math.round(priceN.value * vatSelect.value * 100) / 100;
   priceBrutto.value = `${brutto}`;
 });
+
+const validateInputs = () => {
+  if (!myTextArea.value) {
+    textAlert.classList.remove('hidden')
+  }
+
+  if (!radioYes.checked && !radioNo.checked) {
+    radioAlert.classList.remove('hidden')
+  }
+
+  if (!vatSelect.value) {
+    vatAlert.classList.remove('hidden')
+  }
+
+  if (!priceNetto.value) {
+    priceNettoAlert.classList.remove('hidden')
+  }
+}

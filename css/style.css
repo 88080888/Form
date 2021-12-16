@@ -1,0 +1,130 @@
+/* COLORS */
+/* FONTS */
+.container {
+  background-color: #eeeeee;
+  padding: 40px;
+}
+
+.description {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.textArea {
+  resize: none;
+  border: 2px solid #009b95;
+}
+
+.textArea:focus {
+  border: 3px solid #ff7000;
+}
+
+.my-textarea {
+  font-size: 14px;
+  resize: none;
+}
+
+.form-label {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  margin-right: 25px;
+}
+
+.remainingChars {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.radioButton {
+  margin-bottom: 30px;
+}
+
+.radioButton label {
+  text-transform: uppercase;
+}
+
+.radioButton label:hover {
+  font-weight: bold;
+}
+
+input[type=radio] {
+  margin: 10px;
+}
+
+.chooseVat {
+  margin-bottom: 30px;
+}
+
+.chooseVat .input-group {
+  width: 200px;
+}
+
+.customSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: 2px solid #009b95;
+  padding: 5px 30px 5px 10px;
+  font-size: 16px;
+  display: block;
+  border-radius: 0;
+  height: 40px;
+}
+
+.priceNetto {
+  margin-bottom: 20px;
+}
+
+.priceN,
+.priceB {
+  border: 2px solid #009b95;
+}
+
+.priceN:focus,
+.priceB:focus {
+  border: 3px solid #ff7000;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.btnFile {
+  text-align: center;
+}
+
+.buttonSubmit {
+  color: #fff;
+  background-color: #ff7000;
+  font-size: 20px;
+}
+
+.buttonSubmit:hover {
+  opacity: 80%;
+}
+
+.hidden {
+  display: none;
+}
+
+.textAlert,
+.radioAlert,
+.vatAlert,
+.nettoAlert {
+  color: red;
+  max-width: 150px;
+}
+
+.thankYou {
+  color: green;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

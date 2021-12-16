@@ -18,3 +18,8 @@ radioYes.addEventListener('click', () => {
 radioNo.addEventListener('click', () => {
   fieldset.value = radioNo.value
 });
+
+priceN.addEventListener('input', () => {
+  const brutto = Math.round(priceN.value * vatSelect.value * 100) / 100;
+  priceBrutto.value = `${brutto}`;
+});

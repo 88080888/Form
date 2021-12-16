@@ -41,3 +41,23 @@ const validateInputs = () => {
     priceNettoAlert.classList.remove('hidden')
   }
 }
+
+function addData() {
+  const data = [];
+  for (let i = 0; i < 1; i++) {
+    var text = myTextArea.value;
+    var yesNo = fieldset.value;
+    var vat = vatSelect.value;
+    var netto = priceNetto.value;
+    var brutto = priceBrutto.value;
+    const oneData = {
+      text,
+      yesNo,
+      vat,
+      netto,
+      brutto
+    }
+    data.push(oneData);
+  }
+  console.log(data);
+}

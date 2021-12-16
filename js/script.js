@@ -61,3 +61,13 @@ function addData() {
   }
   console.log(data);
 }
+
+myForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateInputs();
+  addData();
+  if (myTextArea.value != '' && fieldset.value != '' && vatSelect.value != '' && priceNetto.value != '' && priceBrutto.value != '') {
+    form.classList.add('hidden');
+    thankYou.classList.remove('hidden')
+  }
+});

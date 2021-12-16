@@ -3,8 +3,8 @@ const remainingCharsText = document.getElementById('remaining-chars');
 const form = document.querySelector('form');
 const myForm = document.getElementById('myForm');
 const textAlert = document.getElementById('text-alert');
-var radioYes = document.getElementById('r1');
-var radioNo = document.getElementById('r2');
+const radioYes = document.getElementById('r1');
+const radioNo = document.getElementById('r2');
 const radioAlert = document.getElementById('radio-alert');
 const priceNetto = document.getElementById('form-netto');
 const priceNettoAlert = document.getElementById('priceNetto-alert');
@@ -13,7 +13,7 @@ const vatSelect = document.getElementById('inputGroupSelect01');
 const vatAlert = document.getElementById('vat-alert');
 const thankYou = document.getElementById('thank-you');
 const priceN = document.querySelector('input[name="price_netto"]');
-var fieldset = document.getElementById('fieldset');
+const fieldset = document.getElementById('fieldset');
 
 myTextArea.addEventListener('input', () => {
   const remaining = myTextArea.value.length;

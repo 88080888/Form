@@ -10,3 +10,11 @@ myTextArea.addEventListener('input', () => {
     remainingCharsText.textContent;
   }
 });
+
+radioYes.addEventListener('click', () => {
+  fieldset.value = radioYes.value
+});
+
+radioNo.addEventListener('click', () => {
+  fieldset.value = radioNo.value
+});

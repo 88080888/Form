@@ -8,6 +8,7 @@ const radioNo = document.getElementById('r2');
 const radioAlert = document.getElementById('radio-alert');
 const priceNetto = document.getElementById('form-netto');
 const priceNettoAlert = document.getElementById('priceNetto-alert');
+const priceNettoAlert2 = document.getElementById('priceNetto-alert2');
 const priceBrutto = document.getElementById('form-brutto');
 const vatSelect = document.getElementById('inputGroupSelect01');
 const vatAlert = document.getElementById('vat-alert');
@@ -42,6 +43,9 @@ vatSelect.addEventListener('change', (event) => {
 });
 
 priceN.addEventListener('input', () => {
+  if (priceNetto.value.indexOf(',') > 0) {
+    priceNettoAlert2.classList.remove('hidden');
+  }
   const brutto = Math.round(priceN.value * vatSelect.value * 100) / 100;
   priceBrutto.value = `${brutto}`;
 });
@@ -62,7 +66,10 @@ const validateInputs = () => {
   if (!priceNetto.value) {
     priceNettoAlert.classList.remove('hidden')
   }
+
 }
+
+
 
 function addData() {
   const data = [];
